@@ -1,0 +1,21 @@
+{
+  "name": "code",
+  "version": "0.0.0-alpha",
+  "scripts": {
+    "db:push": "prisma db push",
+    "generate": "prisma generate"
+  },
+  "dependencies": {
+    "@prisma/client": "^4.7.1",
+    "nubo": "^0.0.0-alpha",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.17",
+    "@types/uuid": "^9.0.0",
+    "prisma": "^4.7.1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}
