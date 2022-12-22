@@ -7,10 +7,9 @@ export const method = 'post';
 export const path = '/messages';
 
 export const handler = async (ctx: NuboContext) => {
+  const data = ctx.req.body;
   const message = await prisma.message.create({
-    data: {
-      text: 'This is a new message.',
-    },
+    data,
   });
 
   return message;
