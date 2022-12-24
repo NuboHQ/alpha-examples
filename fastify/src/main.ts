@@ -8,6 +8,7 @@ const fastify = Fastify({
 fastify.get('*', () => {
   return {
     message: 'Fastify on Nubo',
+    region: process.env.NUBO_REGION,
   };
 });
 
