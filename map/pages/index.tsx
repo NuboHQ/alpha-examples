@@ -30,12 +30,13 @@ export default function Home({ currentRegion }: Props) {
   );
 }
 
-// export const getServerSideProps: GetServerSideProps = async ({ req }) => {
-//   const currentRegion = process.env.NUBO_REGION;
+export const getServerSideProps: GetServerSideProps = async ({ req }) => {
+  const currentRegion = process.env.NUBO_REGION;
+  console.log({ currentRegion });
 
-//   return {
-//     props: {
-//       currentRegion,
-//     },
-//   };
-// };
+  return {
+    props: {
+      currentRegion,
+    },
+  };
+};
