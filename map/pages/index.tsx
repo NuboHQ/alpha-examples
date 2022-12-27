@@ -3,8 +3,6 @@ import Map from '@/components/map/Map';
 import { GetServerSideProps } from 'next';
 import Header from '@/components/header/Header';
 import Info from '@/components/info/Info';
-import { Region } from '@/lib/regions';
-import { getRegion } from '@/lib/config';
 
 interface Props {
   currentRegion: string;
