@@ -11,6 +11,10 @@ export type Regions = { [id: Region['id']]: Region };
 export const regions: {
   [region: string]: { country: string; location: string };
 } = {
+  local: {
+    country: 'GB',
+    location: 'London, UK',
+  },
   'europe-west-london': {
     country: 'GB',
     location: 'London, UK',
