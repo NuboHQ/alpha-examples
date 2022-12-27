@@ -1,0 +1,14 @@
+{
+  "name": "nubo-bun",
+  "version": "0.0.0-alpha",
+  "module": "src/index.js",
+  "scripts": {
+    "start": "bun run src/index.ts"
+  },
+  "dependencies": {
+    "hono": "^2.2.5"
+  },
+  "devDependencies": {
+    "bun-types": "latest"
+  }
+}
