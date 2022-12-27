@@ -9,6 +9,7 @@ interface Props {
 }
 
 export default function Home({ currentRegion }: Props) {
+  return <div>Hello</div>;
   return (
     <>
       <Head>
@@ -29,12 +30,12 @@ export default function Home({ currentRegion }: Props) {
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async ({ req }) => {
-  const currentRegion = process.env.NUBO_REGION;
+// export const getServerSideProps: GetServerSideProps = async ({ req }) => {
+//   const currentRegion = process.env.NUBO_REGION;
 
-  return {
-    props: {
-      currentRegion,
-    },
-  };
-};
+//   return {
+//     props: {
+//       currentRegion,
+//     },
+//   };
+// };
