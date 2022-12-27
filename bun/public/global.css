@@ -3,6 +3,11 @@ body {
   background-color: #fbf0df;
 }
 
+::selection {
+  background: #000;
+  color: #fbf0df;
+}
+
 .box {
   position: fixed;
   display: flex;
