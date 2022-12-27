@@ -26,5 +26,10 @@ export const regions: {
 };
 
 export const getRegion = (regionId: string) => {
-  return regions[regionId];
+  return (
+    regions[regionId] || {
+      country: 'GB',
+      location: 'London, UK',
+    }
+  );
 };
