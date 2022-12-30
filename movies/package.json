@@ -5,18 +5,21 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "prod": "yarn build:prod && mv dist prod",
+    "prod": "rm -rf prod && yarn build:prod && mv dist prod",
     "build:prod": "tsc && vite build",
     "preview": "vite preview",
     "start": "http-server prod"
   },
   "dependencies": {
+    "@meilisearch/instant-meilisearch": "^0.10.1",
     "daisyui": "^2.46.0",
     "http-server": "^14.1.1",
-    "preact": "^10.11.3"
+    "preact": "^10.11.3",
+    "react-instantsearch-dom": "^6.38.1"
   },
   "devDependencies": {
     "@preact/preset-vite": "^2.4.0",
+    "@types/react-instantsearch-dom": "^6.12.3",
     "autoprefixer": "^10.4.13",
     "postcss": "^8.4.20",
     "tailwindcss": "^3.2.4",

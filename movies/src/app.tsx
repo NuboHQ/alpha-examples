@@ -1,7 +1,18 @@
+import * as RID from 'react-instantsearch-dom';
+import { instantMeiliSearch } from '@meilisearch/instant-meilisearch';
+import Home from './Home';
+
+const InstantSearch: any = RID.InstantSearch;
+
+const searchClient = instantMeiliSearch(
+  import.meta.env.VITE_NUBO_SEARCH_URL,
+  import.meta.env.VITE_NUBO_SEARCH_KEY,
+);
+
 export function App() {
   return (
-    <>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-    </>
+    <InstantSearch indexName="movies" searchClient={searchClient}>
+      <Home />
+    </InstantSearch>
   );
 }
