@@ -1,6 +1,8 @@
 import { InstantSearch } from 'react-instantsearch-dom';
 import { instantMeiliSearch } from '@meilisearch/instant-meilisearch';
-import Home from './Home';
+import Home from './components/Home';
+import MovieDetail from './components/MovieDetail';
+import { MovieProvider } from './contexts/MovieContext';
 
 const searchClient = instantMeiliSearch(
   import.meta.env.VITE_NUBO_SEARCH_URL,
@@ -10,7 +12,10 @@ const searchClient = instantMeiliSearch(
 export default function App() {
   return (
     <InstantSearch indexName="movies" searchClient={searchClient}>
-      <Home />
+      <MovieProvider>
+        <Home />
+        <MovieDetail />
+      </MovieProvider>
     </InstantSearch>
   );
 }

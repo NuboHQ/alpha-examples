@@ -1,5 +1,5 @@
-import Search from './components/Search';
-import Movies from './components/Movies';
+import Search from './Search';
+import Movies from './Movies';
 
 const Home = () => {
   return (
