@@ -1,13 +1,15 @@
-import { SearchBox, Hits, Highlight } from 'react-instantsearch-dom';
-
-const Hit = ({ hit }: any) => <Highlight attribute="title" hit={hit} />;
+import Search from './components/Search';
+import Movies from './components/Movies';
 
 const Home = () => {
   return (
-    <div>
-      <SearchBox />
-      <Hits hitComponent={Hit} />
-    </div>
+    <>
+      <Search />
+
+      <div className="pt-20 lg:pt-32">
+        <Movies />
+      </div>
+    </>
   );
 };
 

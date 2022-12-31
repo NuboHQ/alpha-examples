@@ -22,3 +22,25 @@ body {
   background: #00a4ff;
   color: #fff;
 }
+
+.btn {
+  @apply rounded-md;
+}
+
+.btn-link {
+  @apply no-underline;
+}
+
+.btn-link:hover {
+  @apply no-underline;
+}
+
+.input {
+  @apply rounded-md;
+  @apply bg-background;
+  @apply outline outline-1 outline-gray-700;
+}
+
+.input:focus {
+  @apply outline outline-1 outline-gray-600;
+}
